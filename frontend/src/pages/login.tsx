@@ -1,4 +1,5 @@
 
+import axios from "axios"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { FormEvent, useState } from "react"
 
@@ -13,6 +14,16 @@ export const Login: React.FC<LoginPageProps> = ({  }) => {
     const [password, setpassword] = useState<string>('')
 
     const sendLoginRequest = (event: FormEvent) => {
+        axios.post('/login', {
+            Name: Id,
+            password: password,
+          })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
     }
 
     return (
