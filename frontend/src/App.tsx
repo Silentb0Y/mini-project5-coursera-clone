@@ -8,10 +8,8 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          {/* <RoutLogine path='/' element={<Login setUserId={setUserId}/>}/> */}
           <Route path='/' element={<Login />}/>
           <Route path='/signIn' element={<SignIn />}/>
-          {/* <Route path='/chat' element={<ChatPage UserId={UserId} UserName={UserName} />}/> */}
         </Routes>
       </Router>
     </div>
