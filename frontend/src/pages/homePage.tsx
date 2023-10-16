@@ -2,8 +2,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/homePage.css";
 import data from "./data";
 import { useState } from "react";
-
-import { Link } from "react-router-dom";
 export function HomePage() {
   const [searchTerm, setSearchTerm] = useState("");
 
