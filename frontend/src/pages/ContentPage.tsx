@@ -17,8 +17,10 @@ export default function ContentPage() {
           </ul>
         </section>
         <section className="sectionbottom">
-          <button className="Quix"></button>{" "}
-          <button className="certificate"></button>
+          <button className="Quix btn btn-outline-primary">Assignment</button>{" "}
+          <button className="certificate btn btn-outline-primary">
+            Claim Certificate
+          </button>
         </section>
       </div>
     </div>
