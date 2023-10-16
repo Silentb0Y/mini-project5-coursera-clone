@@ -1,12 +1,13 @@
 import React from "react";
 import NavScrollExample from "./NavScrollExample";
+import { useParams } from "react-router-dom";
 export default function ContentPage() {
   return (
     <div>
       <NavScrollExample />
       <div className="container">
         <section className="sectionTop">
-          <img src=""></img> <h1>Title</h1>
+          <img src=""></img> <h1></h1>
         </section>
         <section className="sectionMiddle">
           <label>Content Video</label>

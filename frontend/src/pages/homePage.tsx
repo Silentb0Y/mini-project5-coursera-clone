@@ -2,8 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/homePage.css";
 import data from "./data";
 import { useState } from "react";
-import NavScrollExample from "./NavScrollExample";
 
+import { Link } from "react-router-dom";
 export function HomePage() {
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -31,8 +31,7 @@ export function HomePage() {
           <p className="card-text">{course.desc}</p>
 
           <a href={course.link} className="btn btn-warning">
-            {" "}
-            Enroll
+            Enrol
           </a>
         </div>
       </div>
@@ -41,7 +40,6 @@ export function HomePage() {
   return (
     <div>
       {" "}
-      <NavScrollExample />
       <section className=" searchi">
         <input
           className="searchi"
